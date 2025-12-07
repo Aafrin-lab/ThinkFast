@@ -1,0 +1,136 @@
+/* .landing-container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  animation: fadeIn 1.5s ease;
+}
+
+.title {
+  font-size: 55px;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 20px;
+  margin-top: 10px;
+  opacity: .9;
+}
+
+.btn-group {
+  margin-top: 40px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 30px;
+  border-radius: 8px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  margin-right: 20px;
+  transition: .3s;
+}
+
+.btn-primary {
+  background: #ffce45;
+  color: black;
+}
+
+.btn-primary:hover {
+  background: #ffbb00;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: black;
+}
+
+.hero-animation .circle {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  animation: float 4s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0);}
+  50% { transform: translateY(-25px);}
+  100% { transform: translateY(0);}
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+} */
+
+
+.landing-container {
+  display: flex;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  animation: fadeIn 1.2s ease;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 800;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  opacity: .95;
+}
+
+.btn-group {
+  margin-top: 28px;
+}
+
+.btn-primary, .btn-secondary {
+  padding: 12px 26px;
+  border-radius: 8px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  margin-right: 14px;
+  transition: .25s;
+}
+
+.btn-primary { background: #ffce45; color: black; }
+.btn-primary:hover { background: #ffbb00; }
+
+.btn-secondary { background: transparent; border: 2px solid white; color: white; }
+.btn-secondary:hover { background: white; color: black; }
+
+.hero-animation .circle {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.12);
+  animation: float 4.5s infinite ease-in-out;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-28px); }
+  100% { transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

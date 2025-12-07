@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', 'Rajdhani', sans-serif;
+  background: #000 !important;
+  color: #fff !important;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Remove any white border from browser */
+#root, .App {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Full black deadly background */
+.container-row, .content, .card, div {
+  background: #000 !important;
+  border: none !important;
+}
+
+/* Remove all default borders */
+input, button, div, a, li, ul {
+  border: none !important;
+  outline: none !important;
+}
+
+/* Squid Game Font Feel */
+h1, h2, h3, button {
+  font-family: 'Rajdhani', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+/* Red Glow Text */
+.glow-red {
+  color: #ff0044;
+  text-shadow: 0 0 20px #ff0044, 0 0 40px #ff0044;
+}
+
+.glow-green {
+  color: #00ff9d;
+  text-shadow: 0 0 20px #00ff9d;
+}
+
+/* Blood Splash */
+.blood-splash {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+  background: radial-gradient(circle at center, rgba(255,0,0,0.8) 0%, transparent 60%);
+  animation: splash 1.8s ease-out forwards;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+@keyframes splash {
+  0% { transform: scale(0); opacity: 1; }
+  100% { transform: scale(4); opacity: 0; }
+}
+
+/* Green / Red Light Circle */
+.light-circle {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin: 30px auto;
+  box-shadow: 0 0 80px currentColor;
+  animation: pulse 1.5s infinite;
+}
+
+.red-light { background: #ff0044; box-shadow: 0 0 100px #ff0044; }
+.green-light { background: #00ff9d; box-shadow: 0 0 100px #00ff9d; }
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
