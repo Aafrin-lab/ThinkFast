@@ -82,6 +82,7 @@
 //   );
 // }
 // src/App.js
+import { BrowserRouter } from "react-router-dom";
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
